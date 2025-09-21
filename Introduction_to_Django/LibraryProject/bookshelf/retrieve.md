@@ -1,9 +1,10 @@
-```markdown
 # Retrieve Operation
 
 ```python
 from bookshelf.models import Book
 
-Book.objects.all()
+# Retrieve the book we created
+book = Book.objects.get(title="1984")
+book
 # Expected Output:
-# <QuerySet [<Book: 1984 by George Orwell (1949)>]>
+# <Book: 1984 by George Orwell (1949)>
