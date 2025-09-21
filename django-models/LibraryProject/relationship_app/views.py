@@ -1,6 +1,6 @@
 from django.shortcuts import render, get_object_or_404
 from django.views.generic import DetailView
-from relationship_app.models import Book, Library  # <-- use full app path
+from .models import Book, Library  # <- this exact line
 
 # Function-based view
 def list_books(request):
